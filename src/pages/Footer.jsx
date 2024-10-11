@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import estate from "../assets/real-estate.jpg";
+import logo from "../assets/logo.jpg";
 import {
   BsDribbble,
   BsFacebook,
@@ -8,25 +8,27 @@ import {
   BsInstagram,
   BsLinkedin,
 } from "react-icons/bs";
+import FormFooter from "../component/FormFooter";
 const Footer = () => {
   return (
-    <div className="bg-black lg:py-10 flex justify-between gap-6 text-white lg:px-10 px-1 py-2 flex-col md:flex-row">
-      <div className="left w-1/2">
+    <>
+    <div className="bg-black lg:py-10 flex justify-between gap-6 text-white lg:px-10 px-3 py-4 flex-col md:flex-row md:gap-20">
+      <div className="left md:w-1/2 w-full">
         <div className="logo flex gap-3 items-center">
           <Link to="/">
             <img
-              src={estate}
+              src={logo}
               alt="Brand Logo"
               width={100}
               height={100}
               className="rounded-full"
             />
           </Link>
-          <p>shamim</p>
+          <h1 className="text-4xl font-semibold font-serif">shamim</h1>
         </div>
 
         <div className="text mt-3">
-          <p className="text-slate-500">
+          <p className="text-slate-500 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             numquam cum inventore omnis nisi delectus unde facere sit rem
             sapiente, dignissimos ex reiciendis eius tenetur saepe minus!
@@ -70,10 +72,16 @@ const Footer = () => {
       </div>
 
       {/* form part of footer */}
-      <div className="right bg-white w-1/2 relative self-start">
-        <h1>Get in Touch</h1>
+      <div className="right  md:w-1/2 relative self-start w-full">
+        <h1 className="font-semibold font-mono">Get in Touch</h1>
+        <FormFooter />
       </div>
+     
     </div>
+     <div className="copyright">
+     <p>copyright by md shamim akhter</p>
+   </div>
+   </>
   );
 };
 

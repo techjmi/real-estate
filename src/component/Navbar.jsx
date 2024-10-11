@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [navbarColor, setNavbarColor] = useState(false);
@@ -25,9 +26,10 @@ const Navbar = () => {
           navbarColor ? 'bg-white text-black z-50' : 'bg-transparent text-white'
         }`}
       >
-        <div className="container mx-auto lg:mx-10 py-6">
-          {/* Navbar content */}
-          Navbar
+        <div className="container mx-auto md:mx-10 py-1">
+        <Link to="/">
+  <img src="/logo.jpg" alt="Website Logo" className="w-14 h-14 rounded-full" />
+</Link>
         </div>
       </nav>
     );
