@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './component/Navbar'
 import Footer from './pages/Footer'
+import FormFooter from './component/FormFooter'
 
 function App() {
   const [count, setCount] = useState(0)

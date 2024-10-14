@@ -8,7 +8,7 @@ const FormFooter = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-4" id='contact'>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           {/* First Name */}
           <div className="relative">
